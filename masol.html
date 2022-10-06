@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Másol</title>
+</head>
+<body>
+    <form>
+        <textarea name="eredeti" id="eredeti" cols="30" rows="10">másod ki</textarea>
+        <input type="button" value="Másol">
+
+        <textarea name="masolat" id="masolat" cols="30" rows="10">töröd ki</textarea>
+        <input type="button" value="töröl" onclick="javascript:eraseText();"> 
+        
+        <script>
+            function eraseText() {
+             document.getElementById("masolat").value = "";
+}
+        </script>
+
+    </form>
+    
+</body>
+</html>

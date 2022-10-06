@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Téglalap oldalai</h1>
+    <label for="old1">Egyik oldal:</label>
+    <input type="number" id="old1" name="old1">
+
+    <label for="old2">Masik oldal:</label>
+    <input type="number" id="old2" name="old2">
+
+    <p></p>
+    <button onclick="myFunction()">Számol</button>
+    <p></p>
+
+
+    <label for="terulet">Terület:</label>
+    <input type="number" id="terulet" name="terulet"><br><br>
+    <label for="kerulet">Kerület:</label>
+    <input type="number" id="kerulet" name="kerulet"><br><br>
+
+    <script>
+        function myFunction() {
+          var old1 = document.getElementById("old1").value;
+          var old2 = document.getElementById("old2").value;
+
+          var terulet= old1*old2;
+          document.getElementById("terulet").value = terulet;
+          var kerulet= 2*(old1+old2);
+          document.getElementById("kerulet").value = kerulet;
+        }
+        </script>
+</body>
+</html>
