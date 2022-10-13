@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téglalap</title>
+</head>
+<body>
+    
+    <form>
+        <label for="oldal">Add meg a Téglalap oldalait</label>
+        <input type="number" id="oldal">
+        <input type="number" id="oldal2">
+        <input type="button" value="szamol" onclick="szamol()">
+
+    </form>
+    <label for="terulet">Terület</label>
+    <input type="number" id="terulet" readonly>
+    <label for="kerulet">Kerület</label>
+    <input type="number" id="kerulet" readonly>
+
+
+
+<script>
+    function szamol(){
+        o1 = document.getElementById("oldal").value;
+        o2 = document.getElementById("oldal2").value;
+        document.getElementById("terulet").value = o1*o2;
+        document.getElementById("kerulet").value = 2*o1+2*o2;
+
+
+    }
+</script>
+
+</body>
+</html>
