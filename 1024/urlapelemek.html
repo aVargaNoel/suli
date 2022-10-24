@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="adatok.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            <p>Név: </p>
+            <input type="text" name="nev" id="nev">
+            <p>Jelszó: </p>
+            <input type="password" name="" id="jelszo">
+            <p>E-mail: </p>
+            <input type="email" name="" id="email">
+            <p>Születési év: </p>
+            <input type="date" name="" id="szev">
+            <p>Születési dátum: </p>
+            <input type="time" name="" id="szd">
+            <p>Értékeld a terméket 10-es skálán:</p>
+            <input type="range" name="" id="" slot="10" onchange="show(this)">
+        </div>
+        <div class="col-md-4">
+            <p>Nyelvtudás, iskolai végzettség</p>
+            <p>Nyelvtudás</p>
+            <input type="checkbox" name="" id="" value="magyar">
+            <input type="checkbox" name="" id="" value="német">
+            <input type="checkbox" name="" id="" value="angol">
+            <input type="checkbox" name="" id="" value="egyéb">
+            <p>Legmagasabb iskolai végzettség:</p>
+            <input type="radio" name="r1" id="" value="alapfok">
+            <input type="radio" name="r2" id="" value="középfok">
+            <input type="radio" name="r3" id="" value="felsőfok">
+        </div>
+        <div class="col-md-4">
+            <p>Válassz ki egy ágazatot:</p>
+    <select name="list" id="list">
+        <option value="">Válassz ki egyet</option>
+        <option value="">Informatika</option>
+        <option value="">Hegesztő</option>
+        <option value="">Forgácsoló</option>
+    </select>
+
+    <textarea name="ta" id="ta" cols="30" rows="10">Indokold meg a választásodat...</textarea>
+        </div>
+    </div>
+    <div class="row">
+        <input onclick=kuldes() type="button" name="" id="" value="Küldés">
+    </div>
+    <div class="smg">
+
+    </div>
+    </div>
+</body>
+</html>
