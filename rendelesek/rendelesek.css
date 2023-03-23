@@ -1,0 +1,30 @@
+body{
+    background-color: brown;
+    color: white;
+}
+table img{
+    width: 80px;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+table td{
+            border: 2px solid red;
+            width:120px;
+        }
+.jobbra{
+    text-align: right;
+}
+input[type=number]{
+    width: 80px;
+  
+} 
+.kiemeles{
+    font-size: 25px;
+    background-color:darkblue;
+    text-align: center;
+    font-weight: bold;
+}
+

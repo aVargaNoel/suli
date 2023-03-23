@@ -1,0 +1,10 @@
+a {
+    color:white!important;
+    
+}
+a:hover{
+    text-decoration:none;
+}
+li:hover{
+    background-color:gray;
+}
